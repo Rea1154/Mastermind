@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mastermind</title>
+  </head>
+  <body>
+    <header>
+      <h1>Mastermind</h1>
+    </header>
+
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bodyrow-10">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="feedback-cell">
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+            </td>
+          </tr>
+
+          <tr class="bodyrow-9">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="feedback-cell">
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+            </td>
+          </tr>
+
+          <tr class="bodyrow-8">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="feedback-cell">
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+            </td>
+          </tr>
+
+          <tr class="bodyrow-7">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="feedback-cell">
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+            </td>
+          </tr>
+
+          <tr class="bodyrow-6">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="feedback-cell">
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+            </td>
+          </tr>
+
+          <tr class="bodyrow-5">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="feedback-cell">
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+            </td>
+          </tr>
+
+          <tr class="bodyrow-4">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="feedback-cell">
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+            </td>
+          </tr>
+
+          <tr class="bodyrow-3">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="feedback-cell">
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+            </td>
+          </tr>
+
+          <tr class="bodyrow-2">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="feedback-cell">
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+            </td>
+          </tr>
+
+          <tr class="bodyrow-1 active-row-style">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="feedback-cell">
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+              <div class="feedback"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="panel-container">
+        <div class="pearl-container">
+          <div data-pearl-color="red" class="pearl pearl-red"></div>
+          <div data-pearl-color="blue" class="pearl pearl-blue"></div>
+          <div data-pearl-color="black" class="pearl pearl-black"></div>
+          <div data-pearl-color="white" class="pearl pearl-white"></div>
+          <div data-pearl-color="green" class="pearl pearl-green"></div>
+          <div data-pearl-color="purple" class="pearl pearl-purple"></div>
+          <div data-pearl-color="yellow" class="pearl pearl-yellow"></div>
+          <div data-pearl-color="brown" class="pearl pearl-brown"></div>
+        </div>
+        <div class="deleteandcheck-container">
+          <button class="btn-delete">Delete</button>
+          <button class="btn-check">Check</button>
+        </div>
+        <div class="newgameandrules-container">
+          <button class="btn-new-game">New Game</button>
+          <button class="btn-rules">Rules</button>
+        </div>
+        <div class="popup-rule popup-hidden">
+          <p class="rule-description">
+            The computer selects 4 pearl.
+             The player has to find out the color of the pearls and their sequence.
+              It's possible that one color appears more than once. The player makes a series of guesses and the computer gives feedback in a form of small pearls.<div
+              class="white-ball"
+            ></div>
+              correct pearl color and correct placement <div
+              class="black-ball"
+            ></div>
+              correct pearl color but not correct placement
+          </p>
+          <button class="popup-close">x</button>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
